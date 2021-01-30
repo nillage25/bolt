@@ -1,0 +1,116 @@
+/* TAB向けレイアウト */
+@media all and (max-width: 1199px) {
+  .inner {
+    /* width: 970px; */
+    width: 97%;
+  }
+
+/* what we can do? */
+
+.section {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.iphone {
+  float: none;
+  margin: 0 0 20px 0;
+}
+
+
+/* our latest work */
+
+.image__box {
+  flex-direction: column;
+}
+
+.article__image {
+  margin: 0;
+}
+
+.article__image:nth-child(3n) {
+  margin-bottom: 80px;
+}
+
+.article__inner {
+  flex-direction: column;
+  margin: 0 0 40px 0;
+}
+
+.article__text {
+  float: none;
+  margin-right: 0;
+  margin-bottom: 40px;
+}
+
+.article__button {
+  float: none;
+}
+
+
+/* our skills */
+
+.skills__box {
+  flex-direction: column;
+}
+
+.skills__circle {
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-bottom: 88px;
+  float: none;
+}
+
+
+
+
+}
+
+/* SP向けレイアウト */
+@media all and (max-width: 767px) {
+
+  /* header */
+  .button {
+    display: none;
+  }
+
+  .fa-bars {
+    display: block;
+  }
+
+  /* theme */
+  .theme {
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+
+  .theme__text {
+    font-size: 80px;
+    word-wrap: normal;
+  }
+  
+  .theme__sub-text {
+    word-wrap: normal;
+  }
+  
+
+/* nav */
+.nav {
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.nav .inner {
+  flex-direction: column;
+}
+
+.sns__image {
+  width: 100%;
+  margin: 0 15px;
+  float: none;
+  padding: 30px;
+}
+
+
+
+}
