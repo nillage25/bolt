@@ -1,7 +1,6 @@
 /* TAB向けレイアウト */
 @media all and (max-width: 1199px) {
   .inner {
-    /* width: 970px; */
     width: 97%;
   }
 
@@ -12,9 +11,11 @@
   padding-bottom: 25px;
 }
 
-.iphone {
+.section__img ,
+.section__box{
   float: none;
-  margin: 0 0 20px 0;
+  width: auto;
+  margin: 0 auto;
 }
 
 
@@ -28,22 +29,28 @@
   margin: 0;
 }
 
-.article__image:nth-child(3n) {
-  margin-bottom: 80px;
+.article__image:nth-child(3n-2) {
+  margin-top: 80px;
+}
+
+.article__image:first-child {
+  margin-top: 40px;
 }
 
 .article__inner {
   flex-direction: column;
-  margin: 0 0 40px 0;
+  margin: 80px 0 0 0;
 }
 
 .article__text {
   float: none;
   margin-right: 0;
-  margin-bottom: 40px;
 }
 
 .article__button {
+  width: 150px;
+  height: 60px;
+  margin-top: 40px;
   float: none;
 }
 
@@ -54,14 +61,16 @@
   flex-direction: column;
 }
 
-.skills__circle {
+.skills__box__circle {
   box-sizing: border-box;
+  margin-top: 88px;
   margin-left: 0;
-  margin-bottom: 88px;
   float: none;
 }
 
-
+.skills__box__circle:first-child {
+  margin-top: 40px;
+}
 
 
 }
