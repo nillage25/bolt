@@ -7,7 +7,8 @@
   <meta name="format-detection" content="telephone=no">
   <title>Bolt - Free Bootstrap 3 Theme</title>
   <meta name="description" content="This is my portfolio site.">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Webサイトの概要を記述するHTMLテキストのことで、検索エンジンのWebサイトタイトルのすぐ下に表示されます。 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="keyword" content="bolt, bootstrap, portfolio">
   <!-- <meta name="viewport" content="width=device-width,initial-scale=1"> -->
   <link rel="stylesheet" href="css/reset.css">
@@ -20,29 +21,29 @@
 <body>
   <!-- header -->
   <header class="header">
-    <div class="inner">
-      <i class="fas fa-bolt"></i>
-      <button class="button">Contact</button>
-      <i class="fas fa-bars"></i>
+    <div class="inner header-inner">
+      <i class="fas fa-bolt header-icon"></i>
+      <a class="header__btn" href="#">Contact</a>
+      <i class="fas fa-bars header-menu"></i>
     </div>
   </header>
-  <main>
+  <main class="main">
     <!-- Theme -->
     <div class="theme">
-      <div class="inner">
-        <h1 class="theme__text">Bolt Theme</h1>
-        <h2 class="theme__sub-text">FREE BOOTSTRAP THEMES.</h2>
+      <div class="inner theme__inner">
+        <h1 class="theme__title title-font">Bolt Theme</h1>
+        <p class="theme__subtitle">FREE BOOTSTRAP THEMES.</p>
       </div>
     </div>
 
     <!-- what we can do? -->
     <section class="section">
-      <div class="inner clearfix">
+      <div class="inner section__inner">
         <div class="section__img">
           <img src="./img/iphone.png" alt="iphoneの画像">
         </div>
         <div class="section__box">
-          <h3 class="section__title">WHAT WE CAN DO?</h3>
+          <h2 class="section__title">WHAT WE CAN DO?</h2>
           <p class="section__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
             galley of type and scrambled it to make a type specimen book.</p>
@@ -52,8 +53,19 @@
 
     <!-- our latest work -->
     <article class="article">
-      <div class="inner">
-        <h3 class="article__title">OUR LATEST WORK</h3>
+      <div class="inner article__inner">
+        <h2 class="article__title title-font">OUR LATEST WORK</h2>
+
+        <!-- <ul class="work__list">
+          <li><a href="#"><img src="./img/01.jpg" alt="iphoneのイラスト"></a></li>
+          <li><a href="#"><img src="./img/02.jpg" alt="水上のロボット"></a></li>
+          <li><a href="#"><img src="./img/03.jpg" alt="無限マーク"></a></li>
+          <li><a href="#"><img src="./img/04.jpg" alt="9×9のイラスト"></a></li>
+          <li><a href="#"><img src="./img/05.jpg" alt="星を持ち上げるロボット"></a></li>
+          <li><a href="#"><img src="./img/06.jpg" alt="おもちゃのロボット"></a></li>
+        </ul> -->
+
+
         <div class="image__box">
           <a class="article__image" href="#">
             <img src="./img/01.jpg" alt="iphoneのイラスト">
@@ -74,17 +86,17 @@
             <img src="./img/06.jpg" alt="おもちゃのロボット">
           </a>
         </div>
-        <div class="article__inner">
+        <div class="article__box">
           <p class="article__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             Ipsum has been the industry's standard dummy text ever.</p>
-          <button class="article__button">Email Me!</button>
+            <button class="article__btn">Email Me!</button>
         </div>
       </div>
     </article>
 
     <!-- our skills -->
     <section class="skills">
-      <div class="inner">
+      <div class="inner skills__inner">
         <h3 class="skills__title">OUR SKILLS</h3>
         <div class="skills__box">
           <a class="skills__box__circle">
@@ -109,24 +121,24 @@
 
     <!-- sns -->
     <nav class="nav clearfix">
-      <div class="inner">
-        <div class="sns__image">
-          <a class="sns__icon" href="#">
+      <div class="inner nav__inner">
+        <div class="nav__image">
+          <a class="nav__icon" href="#">
             <i class="fab fa-facebook-f"></i>
           </a>
         </div>
-        <div class="sns__image">
-          <a class="sns__icon" href="#">
+        <div class="nav__image">
+          <a class="nav__icon" href="#">
             <i class="fab fa-dribbble"></i>
           </a>
         </div>
-        <div class="sns__image">
-          <a class="sns__icon" href="#">
+        <div class="nav__image">
+          <a class="nav__icon" href="#">
             <i class="fab fa-twitter"></i>
           </a>
         </div>
-        <div class="sns__image">
-          <a class="sns__icon" href="#">
+        <div class="nav__image">
+          <a class="nav__icon" href="#">
             <i class="fa fa-envelope"></i>
           </a>
         </div>
@@ -135,8 +147,8 @@
   </main>
   <!-- footer -->
   <footer class="footer">
-    <div class="inner footer__text">
-      <p class="">Crafed with <i class="fas fa-heart"></i> by Black Tie.co.</p>
+    <div class="inner footer__inner">
+      <p class="footer__text">Crafed with <i class="fas fa-heart"></i> by Black Tie.co.</p>
     </div>
   </footer>
 
