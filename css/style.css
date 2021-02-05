@@ -6,6 +6,7 @@ body {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 img {
@@ -26,8 +27,8 @@ img {
   width: 100%;
   background-color: #fff;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 9999;
 }
 
@@ -43,11 +44,11 @@ img {
   color: #fff;
   background-color: #74cfae;
   display: inline-block;
+  transition: color 0.3s;
 }
 
 .header__btn:hover,
 .article__btn:hover {
-  transition: color 0.3s;
   color: #333;
 }
 
@@ -168,7 +169,7 @@ img {
 .image__box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 0;
   margin-top: 40px;
@@ -176,11 +177,14 @@ img {
 
 .image__box li {
   margin: 80px 0 0 100px;
+}
+
+.image__box li a {
   opacity: 0.7;
   transition: 0.3s
 }
 
-.image__box li:hover {
+.image__box li a:hover {
   opacity: 1;
 }
 
@@ -216,6 +220,7 @@ img {
   margin-left: 90px;
   padding: 14px 20px;
   white-space: nowrap;
+  transition: color 0.3s;
 }
 
 
@@ -299,4 +304,121 @@ img {
   padding-bottom: 25px;
   text-align: right;
   color: #fff;
+}
+
+/* TAB向けレイアウト */
+@media all and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+
+  /* what we can do? */
+  .section {
+    padding-bottom: 25px;
+  }
+
+  .section__inner {
+    display: block;
+  }
+
+  .section__img,
+  .section__box {
+    width: 100%;
+  }
+
+
+  /* our latest work */
+
+  .image__box {
+    display: block;
+  }
+  
+  .image__box li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .image__box li:nth-child(3n-2) {
+    margin-top: 80px;
+  }
+
+  .image__box li:first-child {
+    margin-top: 0;
+  }
+
+  .article__box {
+    margin: 80px 0 0 0;
+    display: block;
+  }
+
+  .article__btn {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: inline-block;
+  }
+
+
+  /* our skills */
+
+  .skills__box {
+    display: block;
+  }
+
+  .skills__box li {
+    margin-top: 88px;
+    margin-left: 0;
+  }
+
+  .skills__box li:first-child {
+    margin-top: 40px;
+  }
+
+
+}
+
+/* SP向けレイアウト */
+@media all and (max-width: 767px) {
+
+  /* header */
+  .header__btn {
+    display: none;
+  }
+
+  .header-menu {
+    display: block;
+  }
+
+  /* theme */
+  .theme {
+    padding-top: 160px;
+    padding-bottom: 130px;
+  }
+
+  .theme__text {
+    font-size: 80px;
+    word-wrap: normal;
+  }
+
+  .theme__subtitle {
+    word-wrap: normal;
+  }
+
+
+  /* nav */
+  .nav__inner {
+    padding-top: 50px;
+    box-sizing: border-box;
+  }
+
+  .nav__image {
+    display: block;
+  }
+  
+  .nav__image li {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+
 }
