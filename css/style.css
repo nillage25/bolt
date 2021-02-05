@@ -219,7 +219,13 @@ img {
   margin-left: 90px;
   border: none;
   float: right;
+  transition: all .3;
 }
+
+.article__btn:hover {
+  color: #333;
+}
+
 
 /* our skills */
 .skills {
