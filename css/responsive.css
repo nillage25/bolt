@@ -104,12 +104,11 @@
 
   .nav__image {
     display: block;
-    margin: 0 15px;
   }
   
   .nav__image li {
     width: 100%;
-    margin: 0 15px;
+    margin: 0 auto;
   }
 
 

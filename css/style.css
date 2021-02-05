@@ -57,34 +57,36 @@ img {
 
 .header-menu {
   display: none;
-  position: relative;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 10px;
 }
 
-.header-menu span {
+.header-menu-box {
+  position: relative;
+  width: 25px;
+  height: 20px;
+}
+
+.header-menu-box span {
   position: absolute;
-  left: 15px;
-  width: 30px;
+  left: 0;
+  width: 100%;
   height: 1px;
   background-color: #ddd;
 }
 
 .header-menu span:first-child {
-  top: 25%;
+  top: 0;
 }
 
 .header-menu span:nth-child(2) {
-  top: 50%;
+  top: 10px;
 }
 
 .header-menu span:nth-child(3) {
-  top: 75%;
+  bottom: 0;
 }
 
 .main {
@@ -192,11 +194,11 @@ img {
 
 
 .article__box {
-  display: flex;
   text-align: center;
-  justify-content: space-around;
-  margin: 90px 80px 0 80px;
-  justify-content: space-between;
+  display:flex;
+  justify-content:center;
+  margin-top: 90px;
+  align-items: baseline;
 }
 
 .article__text {
