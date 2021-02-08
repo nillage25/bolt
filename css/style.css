@@ -156,8 +156,7 @@ img {
 }
 
 .article__inner {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px;
 }
 
 .article__title {
@@ -231,8 +230,7 @@ img {
 }
 
 .skills__inner {
-  padding-top: 70px;
-  padding-bottom: 100px;
+  padding: 70px 0 100px;
   text-align: center;
   color: #fff;
 }
@@ -300,8 +298,7 @@ img {
 }
 
 .footer__inner {
-  padding-top: 20px;
-  padding-bottom: 25px;
+  padding: 20px 0 25px;
   text-align: right;
   color: #fff;
 }
@@ -347,7 +344,7 @@ img {
   }
 
   .article__box {
-    margin: 80px 0 0 0;
+    margin: 80px 0 0;
     display: block;
   }
 
@@ -365,8 +362,7 @@ img {
   }
 
   .skills__box li {
-    margin-top: 88px;
-    margin-left: 0;
+    margin: 88px 0 0;
   }
 
   .skills__box li:first-child {
@@ -390,8 +386,7 @@ img {
 
   /* theme */
   .theme {
-    padding-top: 160px;
-    padding-bottom: 130px;
+    padding: 160px 0 130px;
   }
 
   .theme__text {
