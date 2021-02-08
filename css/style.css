@@ -275,11 +275,6 @@ img {
   width: 185px;
   height: 90px;
   text-align: center;
-  transition: 0.3s;
-}
-
-.nav__image li:hover {
-  background-color: #fff;
 }
 
 .nav__image li a {
@@ -287,6 +282,11 @@ img {
   font-size: 50px;
   padding: 20px 0;
   display: block;
+  transition: 0.3s;
+}
+
+.nav__image li a:hover {
+  background-color: #fff;
 }
 
 /* footer */
