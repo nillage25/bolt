@@ -48,7 +48,7 @@ img {
 }
 
 .header__btn:hover,
-.article__btn:hover {
+.work__btn:hover {
   color: #333;
 }
 
@@ -119,32 +119,32 @@ img {
 
 /* what we can do? */
 
-.section {
+.what {
   background-color: #74cfae;
 }
 
-.section__inner {
+.what__inner {
   padding-top: 50px;
   display: flex;
   text-align: center;
 }
 
-.section__img {
+.what__img {
   width: 40%;
   font-size: 0;
 }
 
-.section__box {
+.what__box {
   color: #fff;
   width: 60%;
   padding-top: 20px;
 }
 
-.section__title {
+.what__title {
   font-size: 24px;
 }
 
-.section__subtitle {
+.what__text {
   font-size: 20px;
   margin-top: 35px;
   line-height: 28px;
@@ -152,15 +152,15 @@ img {
 
 /* our latest work */
 
-.article {
+.work {
   background-color: #f2f2f2;
 }
 
-.article__inner {
+.work__inner {
   padding: 60px 0 70px;
 }
 
-.article__title {
+.work__title {
   font-size: 24px;
   color: #333;
   text-align: center;
@@ -196,8 +196,7 @@ img {
   margin-left: 0;
 }
 
-
-.article__box {
+.work__box {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -205,7 +204,7 @@ img {
   align-items: baseline;
 }
 
-.article__text {
+.work__text {
   color: #555;
   font-size: 21px;
   font-weight: 300;
@@ -213,7 +212,7 @@ img {
   letter-spacing: 1px;
 }
 
-.article__btn {
+.work__btn {
   color: #fff;
   background-color: #74cfae;
   font-size: 12px;
@@ -257,28 +256,28 @@ img {
   font-size: 16px;
 }
 
-/* nav */
-.nav {
+/* sns */
+.sns {
   background-color: #f2f2f2;
 }
 
-.nav__inner {
+.sns__inner {
   padding: 200px 0;
 }
 
-.nav__image {
+.sns__image {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav__image li {
+.sns__image li {
   width: 185px;
   height: 90px;
   text-align: center;
 }
 
-.nav__image li a {
+.sns__image li a {
   color: #74cfae;
   font-size: 50px;
   padding: 20px 0;
@@ -286,7 +285,7 @@ img {
   transition: 0.3s;
 }
 
-.nav__image li a:hover {
+.sns__image li a:hover {
   background-color: #fff;
 }
 
@@ -302,24 +301,24 @@ img {
 }
 
 /* TAB向けレイアウト */
-@media all and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .inner {
     width: 97%;
   }
 
   /* what we can do? */
-  .section__inner {
+  .what__inner {
     padding-bottom: 25px;
     display: block;
   }
-  
-  .section__box {
+
+  .what__box {
     padding-top: 0;
     margin-top: 20px;
   }
 
-  .section__img,
-  .section__box {
+  .what__img,
+  .what__box {
     width: 100%;
   }
 
@@ -341,12 +340,12 @@ img {
     margin-top: 0;
   }
 
-  .article__box {
+  .work__box {
     margin-top: 90px;
     display: block;
   }
 
-  .article__btn {
+  .work__btn {
     margin: 40px auto 0;
   }
 
@@ -366,7 +365,7 @@ img {
 }
 
 /* SP向けレイアウト */
-@media all and (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
   /* header */
   .header__btn {
@@ -386,22 +385,22 @@ img {
     font-size: 80px;
   }
 
-/* what we can do? */
-.section__inner {
-  padding-top: 50px;
-}
+  /* what we can do? */
+  .what__inner {
+    padding-top: 50px;
+  }
 
-  /* nav */
-  .nav__inner {
+  /* sns */
+  .sns__inner {
     padding: 50px 0;
     box-sizing: border-box;
   }
 
-  .nav__image {
+  .sns__image {
     display: block;
   }
 
-  .nav__image li {
+  .sns__image li {
     width: 100%;
     margin: 0 auto;
   }
